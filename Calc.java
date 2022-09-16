@@ -43,8 +43,7 @@ public class Calc {
         result = 0;
         }
         {
-            System.out.println("Result:");
-            System.out.println(result);
+            System.out.println("Result:" + result);
         }
 
     }
