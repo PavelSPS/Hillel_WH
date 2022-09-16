@@ -16,7 +16,7 @@ public class Calc {
         System.out.println("Enter an operation:");
         operation = scanner.nextLine();
 
-        if (operation.equals("/") && num2==0)
+        if (operation.equals("/") && num2 == 0)
         {
             System.out.println("You made a mistake, cannot be divided by 0. Try again:");
             return;
