@@ -22,28 +22,15 @@ public class Calc {
             return;
         }
 
-        if (operation.equals("+"))
+        result = switch (operation) {
+            case "+" -> num1 + num2;
+            case "-" -> num1 - num2;
+            case "*" -> num1 * num2;
+            case "/" -> num1 / num2;
+            default -> 0;
+        };
         {
-            result = num1 + num2;
-        }
-        else if (operation.equals("-"))
-        {
-            result = num1 - num2;
-        }
-        else if (operation.equals("*"))
-        {
-            result = num1 * num2;
-        }
-        else if (operation.equals("/"))
-        {
-            result = num1 / num2;
-        }
-        else
-        {
-        result = 0;
-        }
-        {
-            System.out.println("Result:" + result);
+            System.out.println ("Result:"+"\n"+ result);
         }
 
     }
